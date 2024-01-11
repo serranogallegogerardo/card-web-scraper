@@ -17,7 +17,7 @@ Configuración inicial
 
 1.  Crea un entorno virtual en la raíz del proyecto utilizando el siguiente comando:
     
-    bashCopy code
+    bash
     
     `virtualenv env`
     
@@ -25,19 +25,19 @@ Configuración inicial
     
     *   En Windows:
         
-        bashCopy code
+        bash
         
         `.\env\Scripts\activate`
         
     *   En Linux/Mac:
         
-        bashCopy code
+        bash
         
         `source env/bin/activate`
         
 3.  Instala las dependencias necesarias ejecutando:
     
-    bashCopy code
+    bash
     
     `pip install -r requirements.txt`
     
@@ -47,7 +47,7 @@ Configuración del scraper
 
 Abre el archivo `scraper.py` y busca la variable `url` en la parte superior del archivo. Reemplaza la URL actual con el enlace del sitio web que contiene las cartas que deseas extraer.
 
-pythonCopy code
+python
 
 `# scraper.py  # Cambia la siguiente URL por la del sitio que contiene las cartas url = "https://www.ejemplo.com/cartas"`
 
@@ -56,7 +56,7 @@ Ejecutar el scraper
 
 Una vez que hayas configurado la URL, puedes ejecutar el scraper utilizando el siguiente comando:
 
-bashCopy code
+bash
 
 `python scraper.py`
 

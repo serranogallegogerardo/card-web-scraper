@@ -4,7 +4,8 @@ Carta Scraper Bot
 Descripción
 -----------
 
-Este es un bot scraper de cartas diseñado para extraer imágenes de cartas de un sitio web específico. El bot está escrito en Python y utiliza un entorno virtual para gestionar sus dependencias.
+Este es un bot scraper de cartas diseñado para extraer imágenes de cartas de un sitio web específico (www.tcdb.com). 
+El bot está escrito en Python y utiliza un entorno virtual para gestionar sus dependencias.
 
 Requisitos previos
 ------------------
@@ -45,7 +46,8 @@ Configuración inicial
 Configuración del scraper
 -------------------------
 
-Abre el archivo `scraper.py` y busca la variable `url` en la parte superior del archivo. Reemplaza la URL actual con el enlace del sitio web que contiene las cartas que deseas extraer.
+Abre el archivo `scraper.py` y busca la variable `url` en la parte superior del archivo.
+Reemplaza la URL actual con el enlace del sitio web que contiene las cartas que deseas extraer.
 
 python
 

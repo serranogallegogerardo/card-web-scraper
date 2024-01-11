@@ -2,9 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import json
 import os
-from scraper import recolectarData 
 
-recolectarData()
 
 def extraer_imagen(url):
     # Realizar la solicitud a la página web
@@ -35,15 +33,17 @@ def extraer_imagen(url):
             print(f"No se encontraron elementos <img> en la página {url}")
     else:
         print(f"Error al realizar la solicitud. Código de estado: {response.status_code}")
-
-def descargar_imagen(url, folder):
+        
+def descargar_imagen(url, folder, contador):
     # Realizar la solicitud para obtener la imagen
     response = requests.get(url)
 
     # Verificar si la solicitud fue exitosa (código de estado 200)
     if response.status_code == 200:
-        # Obtener el nombre del archivo desde la URL
-        filename = os.path.join(folder, os.path.basename(url))
+        # Obtener la extensión del archivo desde la URL
+        extension = os.path.splitext(url)[1]
+        # Crear el nombre del archivo con el contador y la extensión
+        filename = os.path.join(folder, f"{contador}{extension}")
 
         # Guardar la imagen en la carpeta especificada
         with open(filename, 'wb') as file:
@@ -64,14 +64,15 @@ links_imagenes = []
 folder = 'cartas'
 if not os.path.exists(folder):
     os.makedirs(folder)
-
-# Iterar sobre las URLs y extraer las imágenes
+    
+contador = 1
 for url in urls:
     imagen_url = extraer_imagen(url)
     if imagen_url:
         print(f"URL de imagen para {url}: {imagen_url}")
         links_imagenes.append(imagen_url)
-        descargar_imagen(imagen_url, folder)
+        descargar_imagen(imagen_url, folder, contador)
+        contador += 1
     else:
         print(f"No se pudo extraer la imagen para {url}")
 

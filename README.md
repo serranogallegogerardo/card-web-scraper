@@ -70,3 +70,11 @@ Notas adicionales
 *   Si surge algún problema durante la ejecución, verifica que las dependencias estén instaladas correctamente y que la URL proporcionada sea válida.
     
 *   Este bot scraper se proporciona como un ejemplo básico y puede requerir ajustes según las especificaciones del sitio web que estés tratando de extraer.
+
+Imágenes del Proyecto
+--------------------
+
+![image](https://github.com/serranogallegogerardo/card-web-scraper/assets/98660245/4668a0d7-ca76-499c-9e8a-debbd4f10782)
+
+
+¡Listo! Ahora deberías tener un entorno virtual configurado y el scraper listo para extraer imágenes de cartas según tu configuración. ¡Buena suerte!

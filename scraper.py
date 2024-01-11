@@ -56,4 +56,3 @@ def recolectarData():
     print(f"Lista de URLs guardada en '{output_file_path}'.")
 
 
-recolectarData()

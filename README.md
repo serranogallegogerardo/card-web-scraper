@@ -62,14 +62,7 @@ bash
 
 `python scraper.py`
 
-Este comando iniciará el proceso de extracción de links de imágenes de las cartas en el sitio web proporcionado.
-
-Luego simplemente ejecutamos el otro script.
-
-bash
-
-`python extractImages.py`
-
+Este comando iniciará el proceso de extracción de imágenes de las cartas del sitio web proporcionado.
 
 Notas adicionales
 -----------------

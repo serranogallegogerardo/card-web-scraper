@@ -5,14 +5,14 @@ import json
 def recolectarData():
         
     # URL inicial
-    url = "https://www.tcdb.com/ViewCard.cfm/sid/149667/cid/9623806/2010-Topps-Club-Penguin-Card-Jitsu-Fire-Expansion-Deck-1-Multiplayer-Battle"
-    #url = "https://www.tcdb.com/ViewCard.cfm/sid/256822/cid/15841762/2002-Bandai-Naruto:-Coils-of-the-Snake-001-Inari?PageIndex=1"
+    #url = "https://www.tcdb.com/ViewCard.cfm/sid/149667/cid/9623806?PageIndex=1"
+    url = "https://www.tcdb.com/ViewCard.cfm/sid/256822/cid/15841762/2002-Bandai-Naruto:-Coils-of-the-Snake-001-Inari?PageIndex=1"
 
     # Inicializar la lista
     url_list = []
 
-    # Iterar 30 veces
-    for _ in range(27):
+    # Iterar X veces
+    for _ in range(28):
         # Realizar la solicitud HTTP
         response = requests.get(url)
 
@@ -28,7 +28,6 @@ def recolectarData():
             if td_element:
                 # Encontrar todas las etiquetas <a> dentro del elemento <td>
                 a_elements = td_element.find_all('a')
-                print
 
                 # Verificar si hay al menos un elemento <a>
                 if a_elements:
@@ -37,7 +36,7 @@ def recolectarData():
 
                     # Reemplazar el URL anterior con el nuevo enlace
                     url = "https://www.tcdb.com" + link
-                    print("Nuevo URL:", url)
+                    print("URL:", url)
 
                     # Agregar el nuevo URL a la lista
                     url_list.append(url)
@@ -56,3 +55,4 @@ def recolectarData():
     print(f"Lista de URLs guardada en '{output_file_path}'.")
 
 
+recolectarData()

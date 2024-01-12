@@ -1,0 +1,27 @@
+# Encontrar el div con la clase "col-sm-6" la primer imagen
+    div_col_sm_6 = soup.find('div', class_='col-sm-6')
+
+    # Verificar si se encontró el div
+    if div_col_sm_6:
+        # Encontrar la etiqueta <img> dentro del div
+        img_tag = div_col_sm_6.find('img')
+
+        # Obtener el valor del atributo 'src' si la etiqueta <img> existe
+        if img_tag:
+            src_value = img_tag['src']
+            #print(f"El valor de 'src' es: {src_value}")
+
+            # Obtener el enlace (href) del último <a>
+            link = a_elements[-1].get('href')
+
+            # Reemplazar el URL anterior con el nuevo enlace
+            url = "https://www.tcdb.com" + link
+            print("URL:", url)
+
+            # Agregar el nuevo URL a la lista
+            url_list.append(url)
+
+        else:
+            print("No se encontró la etiqueta <img> dentro del div.")
+    else:
+        print("No se encontró ningún div con la clase 'col-sm-6'")

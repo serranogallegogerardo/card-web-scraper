@@ -39,7 +39,7 @@ Configuración inicial
 Configuración del scraper
 -------------------------
 
-Abre el archivo `scraper.py` y busca la variable `url` en la parte superior del archivo.
+Abre el archivo `scraper.py` y busca la variable `firstUrl` en la parte superior del archivo.
 Reemplaza la URL actual con el enlace del sitio web que contiene las cartas que deseas extraer.
 
 `# scraper.py  # Cambia la siguiente URL por la del sitio que contiene las cartas url = "https://www.ejemplo.com/cartasDeAgua-Index=1"`

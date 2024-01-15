@@ -6,11 +6,16 @@ def recolectarData():
         
     # URL inicial
     #url = "https://www.tcdb.com/ViewCard.cfm/sid/149667/cid/9623806?PageIndex=1"
-    url = "https://www.tcdb.com/ViewCard.cfm/sid/256822/cid/15841762/2002-Bandai-Naruto:-Coils-of-the-Snake-001-Inari?PageIndex=1"
+    #url = "https://www.tcdb.com/ViewCard.cfm/sid/256822/cid/15841762/2002-Bandai-Naruto:-Coils-of-the-Snake-001-Inari?PageIndex=1"
+    url = 'https://www.tcdb.com/ViewCard.cfm/sid/149666/cid/9623732?PageIndex=1'
 
     # Inicializar la lista
     url_list = []
 
+    #first case
+    url_list.append(url)
+
+    #other cases
     # Iterar X veces
     for _ in range(28):
         # Realizar la solicitud HTTP

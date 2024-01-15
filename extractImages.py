@@ -3,7 +3,6 @@ from bs4 import BeautifulSoup
 import json
 import os
 
-
 def extraer_imagen(url):
     # Realizar la solicitud a la página web
     response = requests.get(url)

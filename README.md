@@ -71,6 +71,8 @@ Imágenes del Proyecto
 --------------------
 
 ![image](https://github.com/serranogallegogerardo/card-web-scraper/assets/98660245/4668a0d7-ca76-499c-9e8a-debbd4f10782)
+![image](https://github.com/serranogallegogerardo/card-web-scraper/assets/98660245/96983abd-6c12-4a88-81a2-3383eac007e0)
+
 
 
 ¡Listo! Ahora deberías tener un entorno virtual configurado y el scraper listo para extraer imágenes de cartas según tu configuración. ¡Buena suerte!
